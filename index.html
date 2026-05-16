@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TruyệnCủaAI — Truyện AI viết mỗi ngày</title>
+  <meta name="description" content="Đọc truyện mới mỗi ngày do AI viết. Miễn phí 3 chương đầu. Lãng mạn, tâm sự, hài, huyền bí, fantasy..." />
+  <meta property="og:title" content="TruyệnCủaAI — Truyện AI viết mỗi ngày" />
+  <meta property="og:description" content="Tác giả ảo tự động viết chương mới mỗi ngày. Đọc miễn phí 3 chương đầu, không cần đăng ký." />
+  <meta property="og:url" content="https://truyencuaai.nextaivn.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Be Vietnam Pro', 'sans-serif'] },
+          colors: { brand: { DEFAULT: '#f43f5e', dark: '#e11d48' } }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Be Vietnam Pro', sans-serif; }
+    .genre-pill { transition: all 0.2s ease; }
+    .genre-pill:hover { transform: translateY(-2px); }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    .float { animation: float 4s ease-in-out infinite; }
+    .glow { box-shadow: 0 0 40px rgba(244, 63, 94, 0.25); }
+  </style>
+</head>
+<body class="bg-stone-950 text-white antialiased">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 w-full z-50 bg-stone-950/80 backdrop-blur-md border-b border-stone-800/60">
+    <div class="max-w-5xl mx-auto px-5 h-14 flex items-center justify-between">
+      <span class="font-extrabold text-lg tracking-tight">✨ TruyệnCủaAI</span>
+      <a href="https://truyencuaai.com"
+         class="bg-rose-500 hover:bg-rose-600 active:bg-rose-700 text-white text-sm font-bold px-4 py-2 rounded-full transition-colors">
+        Đọc ngay →
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="pt-36 pb-20 px-5 text-center">
+    <div class="max-w-2xl mx-auto">
+      <div class="float text-6xl mb-8 select-none">📖</div>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-5">
+        Truyện mới mỗi ngày<br />
+        <span class="text-rose-500">do AI viết cho bạn</span>
+      </h1>
+      <p class="text-stone-400 text-lg sm:text-xl leading-relaxed mb-8 max-w-lg mx-auto">
+        Tác giả ảo tự động ra chương mới mỗi ngày — không bao giờ hết chuyện để đọc.
+      </p>
+      <div class="flex gap-3 justify-center flex-wrap mb-5">
+        <a href="https://truyencuaai.com"
+           class="glow bg-rose-500 hover:bg-rose-600 active:bg-rose-700 text-white font-bold px-7 py-3.5 rounded-full text-lg transition-colors">
+          Đọc miễn phí
+        </a>
+        <a href="#tinh-nang"
+           class="border border-stone-700 hover:border-stone-500 text-stone-300 hover:text-white font-semibold px-7 py-3.5 rounded-full text-lg transition-colors">
+          Xem tính năng
+        </a>
+      </div>
+      <p class="text-stone-500 text-sm">Miễn phí 3 chương đầu · Không cần đăng ký</p>
+    </div>
+  </section>
+
+  <!-- Genres -->
+  <section class="pb-20 px-5">
+    <div class="max-w-2xl mx-auto">
+      <p class="text-center text-stone-500 text-xs font-semibold uppercase tracking-widest mb-5">
+        Đọc theo tâm trạng
+      </p>
+      <div class="flex flex-wrap gap-2.5 justify-center">
+        <span class="genre-pill bg-stone-900 hover:bg-rose-500/20 border border-stone-800 hover:border-rose-500/40 px-4 py-2 rounded-full text-sm cursor-pointer select-none">💕 Lãng mạn</span>
+        <span class="genre-pill bg-stone-900 hover:bg-rose-500/20 border border-stone-800 hover:border-rose-500/40 px-4 py-2 rounded-full text-sm cursor-pointer select-none">💜 Tâm sự</span>
+        <span class="genre-pill bg-stone-900 hover:bg-rose-500/20 border border-stone-800 hover:border-rose-500/40 px-4 py-2 rounded-full text-sm cursor-pointer select-none">😄 Hài hước</span>
+        <span class="genre-pill bg-stone-900 hover:bg-rose-500/20 border border-stone-800 hover:border-rose-500/40 px-4 py-2 rounded-full text-sm cursor-pointer select-none">🔍 Huyền bí</span>
+        <span class="genre-pill bg-stone-900 hover:bg-rose-500/20 border border-stone-800 hover:border-rose-500/40 px-4 py-2 rounded-full text-sm cursor-pointer select-none">✨ Fantasy</span>
+        <span class="genre-pill bg-stone-900 hover:bg-rose-500/20 border border-stone-800 hover:border-rose-500/40 px-4 py-2 rounded-full text-sm cursor-pointer select-none">📚 Học đường</span>
+        <span class="genre-pill bg-stone-900 hover:bg-rose-500/20 border border-stone-800 hover:border-rose-500/40 px-4 py-2 rounded-full text-sm cursor-pointer select-none">🌿 Tản văn</span>
+        <span class="genre-pill bg-stone-900 hover:bg-rose-500/20 border border-stone-800 hover:border-rose-500/40 px-4 py-2 rounded-full text-sm cursor-pointer select-none">☕ Truyện ngắn</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="tinh-nang" class="py-20 px-5 border-t border-stone-800/60">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl sm:text-3xl font-bold text-center mb-3">Tại sao chọn TruyệnCủaAI?</h2>
+      <p class="text-stone-400 text-center mb-12">Không giống bất kỳ app đọc truyện nào bạn đã dùng.</p>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+        <div class="bg-stone-900 border border-stone-800 rounded-2xl p-6 hover:border-stone-700 transition-colors">
+          <div class="text-3xl mb-3">🤖</div>
+          <h3 class="font-bold text-base mb-2">AI viết mỗi ngày</h3>
+          <p class="text-stone-400 text-sm leading-relaxed">Chương mới tự động xuất hiện hằng ngày. Không chờ tác giả, không thiếu chương, không gián đoạn.</p>
+        </div>
+
+        <div class="bg-stone-900 border border-stone-800 rounded-2xl p-6 hover:border-stone-700 transition-colors">
+          <div class="text-3xl mb-3">📱</div>
+          <h3 class="font-bold text-base mb-2">3 chế độ đọc</h3>
+          <p class="text-stone-400 text-sm leading-relaxed">Cuộn liên tục, theo chương, hoặc hội thoại chat — tuỳ phong cách bạn thích đọc nhất.</p>
+        </div>
+
+        <div class="bg-stone-900 border border-stone-800 rounded-2xl p-6 hover:border-stone-700 transition-colors">
+          <div class="text-3xl mb-3">🔖</div>
+          <h3 class="font-bold text-base mb-2">Lưu tiến độ tự động</h3>
+          <p class="text-stone-400 text-sm leading-relaxed">Đọc dở trên điện thoại, mở máy tính lên là tiếp tục đúng chỗ — không bao giờ lạc trang.</p>
+        </div>
+
+        <div class="bg-stone-900 border border-stone-800 rounded-2xl p-6 hover:border-stone-700 transition-colors">
+          <div class="text-3xl mb-3">🎭</div>
+          <h3 class="font-bold text-base mb-2">8 thể loại đa dạng</h3>
+          <p class="text-stone-400 text-sm leading-relaxed">Lọc truyện theo tâm trạng hôm nay — lãng mạn, tâm sự, hài, huyền bí, fantasy và nhiều hơn nữa.</p>
+        </div>
+
+        <div class="bg-stone-900 border border-stone-800 rounded-2xl p-6 hover:border-stone-700 transition-colors">
+          <div class="text-3xl mb-3">🆓</div>
+          <h3 class="font-bold text-base mb-2">Miễn phí để thử</h3>
+          <p class="text-stone-400 text-sm leading-relaxed">3 chương đầu miễn phí, không cần đăng ký. Thích rồi mới cần tạo tài khoản để đọc tiếp.</p>
+        </div>
+
+        <div class="bg-stone-900 border border-stone-800 rounded-2xl p-6 hover:border-stone-700 transition-colors">
+          <div class="text-3xl mb-3">🇻🇳</div>
+          <h3 class="font-bold text-base mb-2">Thuần Việt</h3>
+          <p class="text-stone-400 text-sm leading-relaxed">Nội dung viết bằng tiếng Việt, văn phong tự nhiên. Làm cho người Việt, hiểu văn hoá Việt.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-24 px-5">
+    <div class="max-w-lg mx-auto bg-gradient-to-br from-rose-950/60 to-stone-900 border border-rose-500/20 rounded-3xl p-10 text-center glow">
+      <div class="text-5xl mb-5 select-none">✨</div>
+      <h2 class="text-2xl font-bold mb-3">Bắt đầu đọc ngay hôm nay</h2>
+      <p class="text-stone-400 text-sm mb-7 leading-relaxed">
+        Miễn phí 3 chương đầu · Không cần đăng ký<br />Đọc ngay trên web, mọi thiết bị
+      </p>
+      <a href="https://truyencuaai.com"
+         class="inline-block bg-rose-500 hover:bg-rose-600 active:bg-rose-700 text-white font-bold px-8 py-3.5 rounded-full text-lg transition-colors">
+        Đọc truyện miễn phí →
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-stone-800/60 py-8 px-5 text-center text-stone-500 text-sm">
+    <p class="mb-2">
+      ✨ TruyệnCủaAI — Sản phẩm của
+      <a href="https://nextaivn.com" class="text-rose-400 hover:text-rose-300 transition-colors">NextAI</a>
+    </p>
+    <p>
+      © 2025 NextAI ·
+      <a href="https://legal.nextaivn.com" class="hover:text-stone-300 transition-colors">Pháp lý & Chính sách</a>
+    </p>
+  </footer>
+
+</body>
+</html>
